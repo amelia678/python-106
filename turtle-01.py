@@ -1,23 +1,21 @@
-from turtle import *
+import turtle
 
-def center_turtle():
-  up()
-  forward(50)
-  left(90)
-  forward(50)
-  left(270)
+painter = turtle.Turtle()
 
-  down()
+painter.pencolor('pink')
 
+for i in range(50):
+    painter.forward(50)
+    painter.left(123)
 
+painter.pencolor('purple')
+for i in range(50):
+    painter.forward(100)
+    painter.left(123)
 
-def draw_circle():
-  begin_fill()
-  fillcolor('black')
-  pencolor('black')
-  width(10)
-  circle(180)
-  end_fill()
+painter.pencolor('turquoise')
+for i in range(50):
+    painter.forward(200)
+    painter.left(123)    
 
-draw_circle()
-input()
+turtle.done()    
